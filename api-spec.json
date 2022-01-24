@@ -3,26 +3,25 @@
 		"synthesizer": {
 			"voice": "string",
 			"language": "string",
-			"vendor": "azure|google",
+			"vendor": "azure|google|aws",
 			"azure": {
 				"ttsDeploymentId": "string containing custom voice"
 			},
 			"google": {
-				"disablePunctiation": "boolean"
+				"disablePunctuation": "boolean"
 			}
 		},
 		"recognizer": {
 			"language": "string",
-			"vendor": "azure|google",
-			"hints": ["example context"],
+			"vendor": "azure|google|aws",
+			"hints": ["words", "or phrases","we expect", "to see"],
 			"azure": {
-				"sttDeploymentId": "string containin custom speech model",
-				"speechRecognitionMode": "string containing recognigtion mode",
+				"sttDeploymentId": "string containing custom speech model",
+				"speechRecognitionMode": "string containing recognigition mode",
 				"enableAudioLogging": "boolean"
 			},
 			"google": {
 				"interactionType": "string",
-				"hints": "string",
 				"hintsBoost": "number"
 			},
 			"disableTtsCache": "boolean",
@@ -51,37 +50,35 @@
 			"noInputUrl": "string"
 		},
 		"dtmf": {
-			"collect": "boolean",
 			"interDigitTimeout": "number",
 			"maxDigits": "number",
 			"minDigits": "number",
-			"submitDiget": "string"
+			"submitDigit": "string"
 		}
 	},
 	"nextTurn": {
 		"synthesizer": {
 			"voice": "string",
 			"language": "string",
-			"vendor": "azure|google",
+			"vendor": "azure|google|aws",
 			"azure": {
 				"ttsDeploymentId": "string containing custom voice"
 			},
 			"google": {
-				"disablePunctiation": "boolean"
+				"disablePunctuation": "boolean"
 			}
 		},
 		"recognizer": {
 			"language": "string",
-			"vendor": "azure|google",
-			"hints": ["example context"],
+			"vendor": "azure|google|aws",
+			"hints": ["words", "or phrases","we expect", "to see"],
 			"azure": {
-				"sttDeploymentId": "string containin custom speech model",
-				"speechRecognitionMode": "string containing recognigtion mode",
+				"sttDeploymentId": "string containing custom speech model",
+				"speechRecognitionMode": "string containing recognigition mode",
 				"enableAudioLogging": "boolean"
 			},
 			"google": {
 				"interactionType": "string",
-				"hints": "string",
 				"hintsBoost": "number"
 			},
 			"disableTtsCache": "boolean",
@@ -110,11 +107,10 @@
 			"noInputUrl": "string"
 		},
 		"dtmf": {
-			"collect": "boolean",
 			"interDigitTimeout": "number",
 			"maxDigits": "number",
 			"minDigits": "number",
-			"submitDiget": "string"
+			"submitDigit": "string"
 		}
 	}
 }
