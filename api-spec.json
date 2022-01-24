@@ -1,0 +1,120 @@
+{
+	"session": {
+		"synthesizer": {
+			"voice": "string",
+			"language": "string",
+			"vendor": "azure|google",
+			"azure": {
+				"ttsDeploymentId": "string containing custom voice"
+			},
+			"google": {
+				"disablePunctiation": "boolean"
+			}
+		},
+		"recognizer": {
+			"language": "string",
+			"vendor": "azure|google",
+			"hints": ["example context"],
+			"azure": {
+				"sttDeploymentId": "string containin custom speech model",
+				"speechRecognitionMode": "string containing recognigtion mode",
+				"enableAudioLogging": "boolean"
+			},
+			"google": {
+				"interactionType": "string",
+				"hints": "string",
+				"hintsBoost": "number"
+			},
+			"disableTtsCache": "boolean",
+			"continuousASR": {
+				"digits": "string",
+				"timeoutInMs": "number"
+			}
+		},
+		"bargein": {
+			"enable": ["speech", "dtmf"],
+			"minWordCount": "number"
+		},
+		"bot": {
+			"failOnError": "boolean",
+			"noInputGiveUpTimeoutMs": "number",
+			"noInputTimeout": "number",
+			"noInputRetries": "number",
+			"noInputSpeech": "string",
+			"noInputUrl": "string"
+		},
+		"user": {
+			"noInputSendEvent": "boolean",
+			"noInputTimeout": "number",
+			"noInputRetries": "number",
+			"noInputSpeech": "string",
+			"noInputUrl": "string"
+		},
+		"dtmf": {
+			"collect": "boolean",
+			"interDigitTimeout": "number",
+			"maxDigits": "number",
+			"minDigits": "number",
+			"submitDiget": "string"
+		}
+	},
+	"nextTurn": {
+		"synthesizer": {
+			"voice": "string",
+			"language": "string",
+			"vendor": "azure|google",
+			"azure": {
+				"ttsDeploymentId": "string containing custom voice"
+			},
+			"google": {
+				"disablePunctiation": "boolean"
+			}
+		},
+		"recognizer": {
+			"language": "string",
+			"vendor": "azure|google",
+			"hints": ["example context"],
+			"azure": {
+				"sttDeploymentId": "string containin custom speech model",
+				"speechRecognitionMode": "string containing recognigtion mode",
+				"enableAudioLogging": "boolean"
+			},
+			"google": {
+				"interactionType": "string",
+				"hints": "string",
+				"hintsBoost": "number"
+			},
+			"disableTtsCache": "boolean",
+			"continuousASR": {
+				"digits": "string",
+				"timeoutInMs": "number"
+			}
+		},
+		"bargein": {
+			"enable": ["speech", "dtmf"],
+			"minWordCount": "number"
+		},
+		"bot": {
+			"failOnError": "boolean",
+			"noInputGiveUpTimeoutMs": "number",
+			"noInputTimeout": "number",
+			"noInputRetries": "number",
+			"noInputSpeech": "string",
+			"noInputUrl": "string"
+		},
+		"user": {
+			"noInputSendEvent": "boolean",
+			"noInputTimeout": "number",
+			"noInputRetries": "number",
+			"noInputSpeech": "string",
+			"noInputUrl": "string"
+		},
+		"dtmf": {
+			"collect": "boolean",
+			"interDigitTimeout": "number",
+			"maxDigits": "number",
+			"minDigits": "number",
+			"submitDiget": "string"
+		}
+	}
+}
